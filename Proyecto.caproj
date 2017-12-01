@@ -1,0 +1,751 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2project>
+    <name>Proyecto</name>
+    <description></description>
+    <version>1.0.0.0</version>
+    <author></author>
+    <author-email></author-email>
+    <author-website>http://</author-website>
+    <app-id>com.mycompany.myapp</app-id>
+    <unique-id>1cb2csczafpvq</unique-id>
+    <saved-with-version>24400</saved-with-version>
+    <used-plugins>
+        <plugin author="Scirra" id="Audio" version="1">Audio</plugin>
+        <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
+        <plugin author="Scirra" id="Mouse" version="1">Mouse</plugin>
+        <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
+        <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
+    </used-plugins>
+    <used-behaviors>
+        <behavior author="Scirra" id="Bullet" version="1">Bullet</behavior>
+        <behavior author="Scirra" id="EightDir" version="1">8 Direction</behavior>
+        <behavior author="Scirra" id="Fade" version="1">Fade</behavior>
+        <behavior author="Scirra" id="bound" version="1">Bound to layout</behavior>
+        <behavior author="Scirra" id="scrollto" version="1">Scroll To</behavior>
+        <behavior author="Scirra" id="solid" version="1">Solid</behavior>
+    </used-behaviors>
+    <used-effects />
+    <configurations>
+        <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
+    </configurations>
+    <window-size>
+        <width>854</width>
+        <height>480</height>
+    </window-size>
+    <pixel-rounding>0</pixel-rounding>
+    <preview-effects>1</preview-effects>
+    <use-loader-layout>0</use-loader-layout>
+    <configuration-settings>
+        <prop name="Clear background">Yes</prop>
+        <prop name="Downscaling">Medium quality</prop>
+        <prop name="Enable WebGL">On</prop>
+        <prop name="Fullscreen in browser">Letterbox scale</prop>
+        <prop name="Fullscreen scaling">High quality</prop>
+        <prop name="Loader style">Construct 2 splash</prop>
+        <prop name="Orientations">Any</prop>
+        <prop name="Pause on unfocus">No</prop>
+        <prop name="Physics engine">Box2D asm.js</prop>
+        <prop name="Preload sounds">Yes</prop>
+        <prop name="Preview browser">(default)</prop>
+        <prop name="Sampling">Linear</prop>
+        <prop name="Use high-DPI display">Yes</prop>
+    </configuration-settings>
+    <object-folder>
+        <object-type name="Sprite" sid="552523296430345">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="706105895530049" speed="5">
+                    <frame duration="1" hotspotX="0.503663" hotspotY="0.302905" original-source="C:\xampp\htdocs\daw1\programacion\construct\lpc_barbarian_walk_0.png">
+                        <collision-poly>
+                            <point x="0.0128205" y="0.033195" />
+                            <point x="0.5" y="0.00414938" />
+                            <point x="0.987179" y="0.033195" />
+                            <point x="0.983516" y="0.904564" />
+                            <point x="0.5" y="0.991701" />
+                            <point x="0.010989" y="0.917012" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="TiledBackground" sid="404922566105170">
+            <plugin id="TiledBg" />
+            <texture original-source="C:\xampp\htdocs\daw1\proyecto construct\backgrounddetailed1.png.preview.jpg" />
+        </object-type>
+        <object-type name="Pistola" sid="517368700294697">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="Matados" sid="298639724747307" type="number" />
+                <instance-variable name="VidaP" sid="436400549316100" type="number" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="8Direction" sid="172249886226252">
+                    <behavior id="EightDir" />
+                </behavior-type>
+                <behavior-type name="BoundToLayout" sid="654237430343339">
+                    <behavior id="bound" />
+                </behavior-type>
+                <behavior-type name="ScrollTo" sid="206483284197212">
+                    <behavior id="scrollto" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="11" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="427930129574234" speed="30">
+                    <frame duration="1" hotspotX="0.478261" hotspotY="0.5">
+                        <image-point name="Imagepoint 1" x="0.920949" y="0.74537" />
+                    </frame>
+                    <frame duration="1" hotspotX="0.501976" hotspotY="0.5">
+                        <image-point name="Imagepoint 1" x="0.916996" y="0.75" />
+                    </frame>
+                    <frame duration="1" hotspotX="0.501976" hotspotY="0.5">
+                        <image-point name="Imagepoint 1" x="0.916996" y="0.75" />
+                    </frame>
+                    <frame duration="1" hotspotX="0.501976" hotspotY="0.5">
+                        <image-point name="Imagepoint 1" x="0.909091" y="0.740741" />
+                    </frame>
+                    <frame duration="1" hotspotX="0.501976" hotspotY="0.5">
+                        <image-point name="Imagepoint 1" x="0.920949" y="0.736111" />
+                    </frame>
+                    <frame duration="1" hotspotX="0.501976" hotspotY="0.5">
+                        <image-point name="Imagepoint 1" x="0.905138" y="0.722222" />
+                    </frame>
+                    <frame duration="1" hotspotX="0.501976" hotspotY="0.5">
+                        <image-point name="Imagepoint 1" x="0.916996" y="0.736111" />
+                    </frame>
+                    <frame duration="1" hotspotX="0.501976" hotspotY="0.5">
+                        <image-point name="Imagepoint 1" x="0.916996" y="0.736111" />
+                    </frame>
+                    <frame duration="1" hotspotX="0.501976" hotspotY="0.5">
+                        <image-point name="Imagepoint 1" x="0.924901" y="0.740741" />
+                    </frame>
+                    <frame duration="1" hotspotX="0.501976" hotspotY="0.5">
+                        <image-point name="Imagepoint 1" x="0.916996" y="0.736111" />
+                    </frame>
+                    <frame duration="1" hotspotX="0.501976" hotspotY="0.5" original-source="C:\xampp\htdocs\daw1\proyecto construct\survivor-idle_rifle_0.png">
+                        <image-point name="Imagepoint 1" x="0.913043" y="0.75" />
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Cuchillo" sid="289882323909056">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="810278365862247" speed="5">
+                    <frame duration="1" hotspotX="0.50173" hotspotY="0.5" original-source="C:\xampp\htdocs\daw1\programacion\construct\4712b8f653bbf7794384f313575f17c6.png">
+                        <collision-poly>
+                            <point x="0.242215" y="0.3125" />
+                            <point x="0.49827" y="0.138393" />
+                            <point x="0.598616" y="0.517857" />
+                            <point x="0.927336" y="0.5" />
+                            <point x="0.778547" y="0.714286" />
+                            <point x="0.49827" y="0.808036" />
+                            <point x="0.200692" y="0.741071" />
+                            <point x="0.16263" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite2" sid="979608389541412">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="370150736383848" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Mouse" sid="322971169248231">
+            <plugin id="Mouse" />
+        </object-type>
+        <object-type name="Keyboard" sid="277949636719992">
+            <plugin id="Keyboard" />
+        </object-type>
+        <object-type name="DisparoPistola" sid="450233400723564">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Bullet" sid="212716336143126">
+                    <behavior id="Bullet" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="833830822841269" speed="5">
+                    <frame duration="1" hotspotX="0.0243902" hotspotY="0.444444" original-source="C:\xampp\htdocs\daw1\proyecto construct\a276b52d1eded07830d8c4f7840b3c4497db816f5812dca3ebc957cc7c6c8808u7.png">
+                        <collision-poly>
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Enemigo" sid="540873806623453">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="Vida" sid="845884110675544" type="number" />
+            </instance-variables>
+            <animation-folder>
+                <animation framecount="17" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="329926984327621" speed="40">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.501608" original-source="C:\xampp\htdocs\daw1\proyecto construct\Gif enemigo\frame_apngframe01.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.501608" original-source="C:\xampp\htdocs\daw1\proyecto construct\Gif enemigo\frame_apngframe02.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.501608" original-source="C:\xampp\htdocs\daw1\proyecto construct\Gif enemigo\frame_apngframe03.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.501608" original-source="C:\xampp\htdocs\daw1\proyecto construct\Gif enemigo\frame_apngframe04.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.501608" original-source="C:\xampp\htdocs\daw1\proyecto construct\Gif enemigo\frame_apngframe05.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.501608" original-source="C:\xampp\htdocs\daw1\proyecto construct\Gif enemigo\frame_apngframe06.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.501608" original-source="C:\xampp\htdocs\daw1\proyecto construct\Gif enemigo\frame_apngframe07.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.501608" original-source="C:\xampp\htdocs\daw1\proyecto construct\Gif enemigo\frame_apngframe08.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.501608" original-source="C:\xampp\htdocs\daw1\proyecto construct\Gif enemigo\frame_apngframe09.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.501608" original-source="C:\xampp\htdocs\daw1\proyecto construct\Gif enemigo\frame_apngframe10.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.501608" original-source="C:\xampp\htdocs\daw1\proyecto construct\Gif enemigo\frame_apngframe11.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.501608" original-source="C:\xampp\htdocs\daw1\proyecto construct\Gif enemigo\frame_apngframe12.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.501608" original-source="C:\xampp\htdocs\daw1\proyecto construct\Gif enemigo\frame_apngframe13.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.501608" original-source="C:\xampp\htdocs\daw1\proyecto construct\Gif enemigo\frame_apngframe14.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.501608" original-source="C:\xampp\htdocs\daw1\proyecto construct\Gif enemigo\frame_apngframe15.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.501608" original-source="C:\xampp\htdocs\daw1\proyecto construct\Gif enemigo\frame_apngframe16.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.501608" original-source="C:\xampp\htdocs\daw1\proyecto construct\Gif enemigo\frame_apngframe17.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="TiledBackground2" sid="840998141419685">
+            <plugin id="TiledBg" />
+            <texture original-source="C:\xampp\htdocs\daw1\proyecto construct\backgrounddetailed3 (1).png" />
+        </object-type>
+        <object-type name="TiledBackground3" sid="576645190411316">
+            <plugin id="TiledBg" />
+            <texture original-source="C:\xampp\htdocs\daw1\proyecto construct\backgrounddetailed3 (1).png" />
+        </object-type>
+        <object-type name="SpawnV" sid="136935521486903">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="546348261138147" speed="5">
+                    <frame duration="1" hotspotX="0.472" hotspotY="0.48">
+                        <image-point name="Imagepoint 1" x="0.528" y="0.1" />
+                        <image-point name="Imagepoint 2" x="0.524" y="0.36" />
+                        <image-point name="Imagepoint 3" x="0.488" y="0.68" />
+                        <image-point name="Imagepoint 4" x="0.544" y="0.932" />
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Spawn2" sid="704979813660686">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="324218355710078" speed="5">
+                    <frame duration="1" hotspotX="0.472" hotspotY="0.48">
+                        <image-point name="Imagepoint 1" x="0.044" y="0.572" />
+                        <image-point name="Imagepoint 2" x="0.908" y="0.588" />
+                        <image-point name="Imagepoint 3" x="0.652" y="0.584" />
+                        <image-point name="Imagepoint 4" x="0.336" y="0.584" />
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="SpawnH" sid="182351657229405">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="546108726054481" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <image-point name="Imagepoint 1" x="0.06" y="0.504" />
+                        <image-point name="Imagepoint 2" x="0.328" y="0.524" />
+                        <image-point name="Imagepoint 3" x="0.648" y="0.492" />
+                        <image-point name="Imagepoint 4" x="0.9" y="0.508" />
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sangre" sid="116235333509663">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Fade" sid="387643678162171">
+                    <behavior id="Fade" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="365423093849322" speed="5">
+                    <frame duration="1" hotspotX="0.7425" hotspotY="0.538462" original-source="C:\xampp\htdocs\daw1\proyecto construct\Blood-Splatter63333.png">
+                        <collision-poly>
+                            <point x="0.3625" y="0.384615" />
+                            <point x="0.5" y="0.291777" />
+                            <point x="0.72" y="0.297082" />
+                            <point x="0.985" y="0.498674" />
+                            <point x="0.975" y="0.973475" />
+                            <point x="0.5" y="1" />
+                            <point x="0.175" y="0.814324" />
+                            <point x="0.465" y="0.498674" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="EnemigoDisparo" sid="883718557988461">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="Vida" sid="886014081252399" type="number" />
+            </instance-variables>
+            <animation-folder>
+                <animation framecount="24" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="767139897450074" speed="20">
+                    <frame duration="1" hotspotX="0.501779" hotspotY="0.498221" original-source="C:\xampp\htdocs\daw1\proyecto construct\Gig caballero\frame_apngframe01.png">
+                        <image-point name="Imagepoint 1" x="0.982206" y="0.512456" />
+                        <collision-poly>
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.501779" hotspotY="0.498221" original-source="C:\xampp\htdocs\daw1\proyecto construct\Gig caballero\frame_apngframe02.png">
+                        <collision-poly>
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.501779" hotspotY="0.498221" original-source="C:\xampp\htdocs\daw1\proyecto construct\Gig caballero\frame_apngframe03.png">
+                        <collision-poly>
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.501779" hotspotY="0.498221" original-source="C:\xampp\htdocs\daw1\proyecto construct\Gig caballero\frame_apngframe04.png">
+                        <collision-poly>
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.501779" hotspotY="0.498221" original-source="C:\xampp\htdocs\daw1\proyecto construct\Gig caballero\frame_apngframe05.png">
+                        <collision-poly>
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.501779" hotspotY="0.498221" original-source="C:\xampp\htdocs\daw1\proyecto construct\Gig caballero\frame_apngframe06.png">
+                        <collision-poly>
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.501779" hotspotY="0.498221" original-source="C:\xampp\htdocs\daw1\proyecto construct\Gig caballero\frame_apngframe07.png">
+                        <collision-poly>
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.501779" hotspotY="0.498221" original-source="C:\xampp\htdocs\daw1\proyecto construct\Gig caballero\frame_apngframe08.png">
+                        <collision-poly>
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.501779" hotspotY="0.498221" original-source="C:\xampp\htdocs\daw1\proyecto construct\Gig caballero\frame_apngframe09.png">
+                        <collision-poly>
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.501779" hotspotY="0.498221" original-source="C:\xampp\htdocs\daw1\proyecto construct\Gig caballero\frame_apngframe10.png">
+                        <collision-poly>
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.501779" hotspotY="0.498221" original-source="C:\xampp\htdocs\daw1\proyecto construct\Gig caballero\frame_apngframe11.png">
+                        <collision-poly>
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.501779" hotspotY="0.498221" original-source="C:\xampp\htdocs\daw1\proyecto construct\Gig caballero\frame_apngframe12.png">
+                        <collision-poly>
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.501779" hotspotY="0.498221" original-source="C:\xampp\htdocs\daw1\proyecto construct\Gig caballero\frame_apngframe13.png">
+                        <collision-poly>
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.501779" hotspotY="0.498221" original-source="C:\xampp\htdocs\daw1\proyecto construct\Gig caballero\frame_apngframe14.png">
+                        <collision-poly>
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.501779" hotspotY="0.498221" original-source="C:\xampp\htdocs\daw1\proyecto construct\Gig caballero\frame_apngframe15.png">
+                        <collision-poly>
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.501779" hotspotY="0.498221" original-source="C:\xampp\htdocs\daw1\proyecto construct\Gig caballero\frame_apngframe16.png">
+                        <collision-poly>
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.501779" hotspotY="0.498221" original-source="C:\xampp\htdocs\daw1\proyecto construct\Gig caballero\frame_apngframe17.png">
+                        <collision-poly>
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.501779" hotspotY="0.498221" original-source="C:\xampp\htdocs\daw1\proyecto construct\Gig caballero\frame_apngframe18.png">
+                        <collision-poly>
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.501779" hotspotY="0.498221" original-source="C:\xampp\htdocs\daw1\proyecto construct\Gig caballero\frame_apngframe19.png">
+                        <collision-poly>
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.501779" hotspotY="0.498221" original-source="C:\xampp\htdocs\daw1\proyecto construct\Gig caballero\frame_apngframe20.png">
+                        <collision-poly>
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.501779" hotspotY="0.498221" original-source="C:\xampp\htdocs\daw1\proyecto construct\Gig caballero\frame_apngframe21.png">
+                        <collision-poly>
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.501779" hotspotY="0.498221" original-source="C:\xampp\htdocs\daw1\proyecto construct\Gig caballero\frame_apngframe22.png">
+                        <collision-poly>
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.501779" hotspotY="0.498221" original-source="C:\xampp\htdocs\daw1\proyecto construct\Gig caballero\frame_apngframe23.png">
+                        <collision-poly>
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.501779" hotspotY="0.498221" original-source="C:\xampp\htdocs\daw1\proyecto construct\Gig caballero\frame_apngframe24.png">
+                        <collision-poly>
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="DisparoAK" sid="325130371245319">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Bullet" sid="923593358458451">
+                    <behavior id="Bullet" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="844307006965672" speed="5">
+                    <frame duration="1" hotspotX="0.0465116" hotspotY="0.478261" original-source="C:\xampp\htdocs\daw1\proyecto construct\a276b52d1eded07830d8c4f7840b3c4497db816f5812dca3ebc957cc7c6c8808u7.png">
+                        <collision-poly>
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="AK" sid="179591230897523">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="Matados" sid="902174984508585" type="number" />
+                <instance-variable name="Vida" sid="195726592426889" type="number" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="8Direction" sid="280243275573216">
+                    <behavior id="EightDir" />
+                </behavior-type>
+                <behavior-type name="BoundToLayout" sid="131519863229734">
+                    <behavior id="bound" />
+                </behavior-type>
+                <behavior-type name="ScrollTo" sid="398598689136615">
+                    <behavior id="scrollto" />
+                </behavior-type>
+            </behaviors>
+            <container>
+                <type>AK</type>
+                <type>BarraDeVida</type>
+            </container>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="938592614978391" speed="5">
+                    <frame duration="1" hotspotX="0.546326" hotspotY="0.681159" original-source="C:\xampp\htdocs\daw1\proyecto construct\survivor-idle_rifle_0.png">
+                        <image-point name="Imagepoint 1" x="0.932907" y="0.73913" />
+                        <image-point name="Imagepoint 2" x="0.664537" y="0.7343" />
+                        <image-point name="Imagepoint 3" x="0.341853" y="0.758454" />
+                        <collision-poly>
+                            <point x="0.178914" y="0.270531" />
+                            <point x="0.498403" y="0.352657" />
+                            <point x="0.674121" y="0.492754" />
+                            <point x="0.846645" y="0.768116" />
+                            <point x="0.498403" y="0.821256" />
+                            <point x="0.134185" y="0.797101" />
+                            <point x="0.121406" y="0.497585" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="TiledBackground4" sid="852034556963420">
+            <plugin id="TiledBg" />
+            <texture original-source="C:\xampp\htdocs\daw1\proyecto construct\GameOver.png" />
+        </object-type>
+        <object-type name="Sprite4" sid="829473622676843">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="868533858355529" speed="5">
+                    <frame duration="1" hotspotX="0.498747" hotspotY="0.590164" original-source="C:\xampp\htdocs\daw1\proyecto construct\Restart.jpg" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="TiledBackground5" sid="310405818126297">
+            <plugin id="TiledBg" />
+            <texture original-source="C:\xampp\htdocs\daw1\proyecto construct\GameOver.png" />
+        </object-type>
+        <object-type name="BalaEnemigo" sid="924760574941883">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Bullet" sid="687859104379248">
+                    <behavior id="Bullet" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="368001732590264" speed="5">
+                    <frame duration="1" hotspotX="0.0930233" hotspotY="0.5" original-source="C:\xampp\htdocs\daw1\proyecto construct\a276b52d1eded07830d8c4f7840b3c4497db816f5812dca3ebc957cc7c6c8808u7.png">
+                        <collision-poly>
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="BAK" sid="148831882515515">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="957095309119293" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\xampp\htdocs\daw1\proyecto construct\ak--7rzTgx.gif">
+                        <collision-poly>
+                            <point x="0.375" y="0.375" />
+                            <point x="0.5" y="0.367188" />
+                            <point x="0.625" y="0.375" />
+                            <point x="0.914063" y="0.5" />
+                            <point x="0.515625" y="0.515625" />
+                            <point x="0.5" y="0.546875" />
+                            <point x="0.382813" y="0.617188" />
+                            <point x="0.453125" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="BPistola" sid="376958695328874">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="711081399792489" speed="5">
+                    <frame duration="1" hotspotX="0.519481" hotspotY="0.518519" original-source="C:\xampp\htdocs\daw1\proyecto construct\glock_21__pivot_animator_sprite__by_wolfzone51-daxw9a2.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite6" sid="410981958754261">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="933895722832028" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\xampp\htdocs\daw1\proyecto construct\Captura.png">
+                        <collision-poly>
+                            <point x="0.216981" y="0.442308" />
+                            <point x="0.5" y="0.375" />
+                            <point x="0.872642" y="0.259615" />
+                            <point x="0.759434" y="0.5" />
+                            <point x="0.759434" y="0.509615" />
+                            <point x="0.5" y="0.596154" />
+                            <point x="0" y="1" />
+                            <point x="0.160377" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="TiledBackground6" sid="965054597710266">
+            <plugin id="TiledBg" />
+            <texture original-source="C:\xampp\htdocs\daw1\proyecto construct\Mano zombie.png" />
+        </object-type>
+        <object-type name="TiledBackground7" sid="483834751174300">
+            <plugin id="TiledBg" />
+            <texture original-source="C:\xampp\htdocs\daw1\proyecto construct\9.jpg" />
+        </object-type>
+        <object-type name="Audio" sid="289861192407047">
+            <plugin id="Audio" />
+        </object-type>
+        <object-type name="TiledBackground8" sid="324499148345561">
+            <plugin id="TiledBg" />
+            <texture original-source="C:\xampp\htdocs\daw1\proyecto construct\backgrounddetailed2.png" />
+        </object-type>
+        <object-type name="Sprite3" sid="270864442979074">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="758654845665060" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.513514" original-source="C:\xampp\htdocs\daw1\proyecto construct\descarga.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="BarraDeVida" sid="674081655455565">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="BoundToLayout" sid="585520681658863">
+                    <behavior id="bound" />
+                </behavior-type>
+                <behavior-type name="Solid" sid="394363319075632">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <container>
+                <type>AK</type>
+                <type>BarraDeVida</type>
+            </container>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="522952647861399" speed="5">
+                    <frame duration="1" hotspotX="0.0223881" hotspotY="0.513514" original-source="C:\xampp\htdocs\daw1\proyecto construct\descarga.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Barra" sid="890751087468286">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="795224736061931">
+                    <behavior id="solid" />
+                </behavior-type>
+                <behavior-type name="BoundToLayout" sid="619440142168509">
+                    <behavior id="bound" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="428837825151222" speed="5">
+                    <frame duration="1" hotspotX="0.0261194" hotspotY="0.459459" original-source="C:\xampp\htdocs\daw1\proyecto construct\descarga.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+    </object-folder>
+    <families />
+    <layout-folder>
+        <layout>Menu.xml</layout>
+        <layout>AK.xml</layout>
+        <layout>Pistola.xml</layout>
+        <layout>Game Over.xml</layout>
+    </layout-folder>
+    <event-folder>
+        <event-sheet>Event pistola.xml</event-sheet>
+        <event-sheet>Event AK.xml</event-sheet>
+        <event-sheet>Event GameOver.xml</event-sheet>
+        <event-sheet>Event menu.xml</event-sheet>
+    </event-folder>
+    <global-instances>
+        <global-instance type="Mouse" uid="6" />
+        <global-instance type="Keyboard" uid="7" />
+        <global-instance type="Audio" uid="2">
+            <properties>
+                <timescale-audio>Off</timescale-audio>
+                <saveload>All</saveload>
+                <play-in-background>No</play-in-background>
+                <positioned-audio></positioned-audio>
+                <panning-model>HRTF</panning-model>
+                <distance-model>Inverse</distance-model>
+                <listener-z-height>600</listener-z-height>
+                <reference-distance>600</reference-distance>
+                <maximum-distance>10000</maximum-distance>
+                <roll-off-factor>1</roll-off-factor>
+            </properties>
+        </global-instance>
+    </global-instances>
+    <sounds-folder>
+        <file name="Carga-pistola.m4a" />
+        <file name="GameOver.m4a" />
+        <file name="Escopetacargandorifle.m4a" />
+        <file name="DisparoPistola.m4a" />
+        <file name="sangre.m4a" />
+        <file name="escopeta.m4a" />
+        <file name="AK.m4a" />
+        <file name="AK.ogg" />
+        <file name="Recarga pistola.m4a" />
+        <file name="Recarga pistola.ogg" />
+        <file name="Recarga fusil.m4a" />
+        <file name="Recarga fusil.ogg" />
+        <file name="Disparo pistola.m4a" />
+        <file name="Disparo pistola.ogg" />
+        <file name="Game over.m4a" />
+        <file name="Game over.ogg" />
+        <file name="Sangre.ogg" />
+        <file name="Ambiente menu.m4a" />
+        <file name="Ambiente menu.ogg" />
+        <file name="45610__flick3r__bounce-seq-5.m4a" />
+        <file name="45610__flick3r__bounce-seq-5.ogg" />
+    </sounds-folder>
+    <music-folder />
+    <files-folder>
+        <file-folder name="Icons">
+            <file name="icon-16.png" />
+            <file name="icon-32.png" />
+            <file name="icon-114.png" />
+            <file name="icon-128.png" />
+            <file name="icon-256.png" />
+            <file name="loading-logo.png" />
+        </file-folder>
+    </files-folder>
+</c2project>

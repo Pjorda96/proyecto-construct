@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Event GameOver</name>
+    <events>
+        <event-block sid="718445636376027">
+            <conditions>
+                <condition id="7" name="Cursor is over object" sid="937413121486178" type="Mouse">
+                    <param id="0" name="Object">Sprite4</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="9" name="Set scale" sid="957596409828243" type="Sprite4">
+                    <param id="0" name="Scale">1.2</param>
+                </action>
+                <action id="0" name="Set cursor style" sid="637274769372808" type="Mouse">
+                    <param id="0" name="Cursor style">3</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="611869722664402">
+            <conditions>
+                <condition id="7" inverted="1" name="Cursor is over object" sid="906508842090753" type="Mouse">
+                    <param id="0" name="Object">Sprite4</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="9" name="Set scale" sid="370129798567120" type="Sprite4">
+                    <param id="0" name="Scale">1</param>
+                </action>
+                <action id="0" name="Set cursor style" sid="541898704531166" type="Mouse">
+                    <param id="0" name="Cursor style">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="216316531425980">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="359456008529220" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">Sprite4</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="928267205466659" type="System">
+                    <param id="0" name="Layout">Menu</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="179366400528015">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="826455675140610" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="412055133552171" type="Audio">
+                    <param id="0" name="Audio file">Game over</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

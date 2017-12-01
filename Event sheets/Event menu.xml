@@ -1,0 +1,126 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Event menu</name>
+    <events>
+        <event-block sid="543477357981107">
+            <conditions>
+                <condition id="7" name="Cursor is over object" sid="250815105553348" type="Mouse">
+                    <param id="0" name="Object">BAK</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="9" name="Set scale" sid="903132780339296" type="BAK">
+                    <param id="0" name="Scale">1.2</param>
+                </action>
+                <action id="0" name="Set cursor style" sid="447738849442108" type="Mouse">
+                    <param id="0" name="Cursor style">3</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="840510876484194">
+            <conditions>
+                <condition id="7" inverted="1" name="Cursor is over object" sid="556590268351167" type="Mouse">
+                    <param id="0" name="Object">BAK</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="9" name="Set scale" sid="629560177681715" type="BAK">
+                    <param id="0" name="Scale">1</param>
+                </action>
+                <action id="0" name="Set cursor style" sid="441149865475832" type="Mouse">
+                    <param id="0" name="Cursor style">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="455066763105613">
+            <conditions>
+                <condition id="7" name="Cursor is over object" sid="949034080738548" type="Mouse">
+                    <param id="0" name="Object">BPistola</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="9" name="Set scale" sid="215243281892012" type="BPistola">
+                    <param id="0" name="Scale">1.2</param>
+                </action>
+                <action id="0" name="Set cursor style" sid="874906750021372" type="Mouse">
+                    <param id="0" name="Cursor style">3</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="405883075012767">
+            <conditions>
+                <condition id="7" inverted="1" name="Cursor is over object" sid="676329184956026" type="Mouse">
+                    <param id="0" name="Object">BPistola</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="9" name="Set scale" sid="774837185065096" type="BPistola">
+                    <param id="0" name="Scale">1</param>
+                </action>
+                <action id="0" name="Set cursor style" sid="448482959769585" type="Mouse">
+                    <param id="0" name="Cursor style">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="272501159600726">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="237627549292208" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">BAK</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="657646618985669" type="System">
+                    <param id="0" name="Layout">AK</param>
+                </action>
+                <action id="6" name="Stop" sid="666992548572888" type="Audio">
+                    <param id="0" name="Tag">&quot;menu&quot;</param>
+                </action>
+                <action id="0" name="Play" sid="987993241786319" type="Audio">
+                    <param id="0" name="Audio file">Recarga fusil</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="214722029873887">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="281273250104559" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">BPistola</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="665759482114658" type="System">
+                    <param id="0" name="Layout">Pistola</param>
+                </action>
+                <action id="6" name="Stop" sid="666012494592588" type="Audio">
+                    <param id="0" name="Tag">&quot;menu&quot;</param>
+                </action>
+                <action id="0" name="Play" sid="634296239949103" type="Audio">
+                    <param id="0" name="Audio file">Recarga pistola</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="717458198180397">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="809900364672040" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="537486900407726" type="Audio">
+                    <param id="0" name="Audio file">Ambiente menu</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;menu&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

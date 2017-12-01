@@ -1,0 +1,328 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Event AK</name>
+    <events>
+        <event-block sid="616711172159233">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="290280655268722" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="614020574203771" type="Audio">
+                    <param id="0" name="Audio file">45610__flick3r__bounce-seq-5</param>
+                    <param id="2" name="Loop">1</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;fondo&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="781991863675782">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="523768531166630" type="System" />
+            </conditions>
+            <actions>
+                <action id="-22" name="Set angle toward position" sid="125498120437252" type="AK">
+                    <param id="0" name="X">Mouse.X</param>
+                    <param id="1" name="Y">Mouse.Y</param>
+                </action>
+                <action id="-22" name="Set angle toward position" sid="121737957680099" type="EnemigoDisparo">
+                    <param id="0" name="X">AK.X</param>
+                    <param id="1" name="Y">AK.Y</param>
+                </action>
+                <action id="-17" name="Move forward" sid="151666879405098" type="EnemigoDisparo">
+                    <param id="0" name="Distance">0.5</param>
+                </action>
+                <action id="-5" name="Set width" sid="261210696571575" type="BarraDeVida">
+                    <param id="0" name="Width">AK.Vida</param>
+                </action>
+                <action id="-3" name="Set position" sid="100831323874871" type="BarraDeVida">
+                    <param id="0" name="X">AK.X-100</param>
+                    <param id="1" name="Y">AK.Y+50</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="663878753527005">
+            <conditions>
+                <condition id="0" name="On click" sid="831866565788464" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Spawn another object" sid="613566209227597" type="AK">
+                    <param id="0" name="Object">DisparoAK</param>
+                    <param id="1" name="Layer">1</param>
+                    <param id="2" name="Image point">1</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="989273467555506" type="AK">
+                    <param id="0" name="Object">DisparoAK</param>
+                    <param id="1" name="Layer">1</param>
+                    <param id="2" name="Image point">2</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="627198889120566" type="AK">
+                    <param id="0" name="Object">DisparoAK</param>
+                    <param id="1" name="Layer">1</param>
+                    <param id="2" name="Image point">3</param>
+                </action>
+                <action id="-8" name="Set angle" sid="485161792553085" type="DisparoAK">
+                    <param id="0" name="Angle">AK.Angle</param>
+                </action>
+                <action id="0" name="Play" sid="227564435438300" type="Audio">
+                    <param id="0" name="Audio file">AK</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="872460230250460">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="959414879365588" type="DisparoAK">
+                    <param id="0" name="Object">EnemigoDisparo</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="513308658308303" type="DisparoAK" />
+                <action id="-12" name="Subtract from" sid="526264056229297" type="EnemigoDisparo">
+                    <param id="0" name="Instance variable">Vida</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="144955046959342">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="305523658596233" type="EnemigoDisparo">
+                    <param id="0" name="Instance variable">Vida</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Spawn another object" sid="143109387420074" type="EnemigoDisparo">
+                    <param id="0" name="Object">Sangre</param>
+                    <param id="1" name="Layer">1</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+                <action id="-12" name="Subtract from" sid="420896521857202" type="AK">
+                    <param id="0" name="Instance variable">Matados</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-9" name="Destroy" sid="460305949658005" type="EnemigoDisparo" />
+                <action id="0" name="Play" sid="447947250302256" type="Audio">
+                    <param id="0" name="Audio file">Sangre</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="742674022052138">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="605814018518572" type="AK">
+                    <param id="0" name="Instance variable">Matados</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="580157138883980" type="System">
+                    <param id="0" name="Layout">Menu</param>
+                </action>
+                <action id="33" name="Stop all" sid="190900533479825" type="Audio" />
+            </actions>
+        </event-block>
+        <event-block sid="809949306233535">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="178655569009828" type="System">
+                    <param id="0" name="Interval (seconds)">5</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Spawn another object" sid="110998690058369" type="SpawnV">
+                    <param id="0" name="Object">EnemigoDisparo</param>
+                    <param id="1" name="Layer">1</param>
+                    <param id="2" name="Image point">random(0,4)</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="163004111501085">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="716013001975143" type="System">
+                    <param id="0" name="Interval (seconds)">5</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Spawn another object" sid="853874627999879" type="SpawnH">
+                    <param id="0" name="Object">EnemigoDisparo</param>
+                    <param id="1" name="Layer">1</param>
+                    <param id="2" name="Image point">random(0,4)</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="797516010025970">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="590336954309024" type="AK">
+                    <param id="0" name="Object">EnemigoDisparo</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-12" name="Subtract from" sid="252366549214058" type="AK">
+                    <param id="0" name="Instance variable">Vida</param>
+                    <param id="1" name="Value">100</param>
+                </action>
+                <action id="-9" name="Destroy" sid="270965238213602" type="EnemigoDisparo" />
+            </actions>
+        </event-block>
+        <event-block sid="131129470971925">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="517266987717757" type="AK">
+                    <param id="0" name="Instance variable">Vida</param>
+                    <param id="1" name="Comparison">3</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="396172091704793" type="System">
+                    <param id="0" name="Layout">Game Over</param>
+                </action>
+                <action id="33" name="Stop all" sid="815480493853650" type="Audio" />
+            </actions>
+        </event-block>
+        <event-block sid="840231251969142">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="775362201529321" type="BalaEnemigo">
+                    <param id="0" name="Object">AK</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="844118779069796" type="BalaEnemigo" />
+                <action id="-12" name="Subtract from" sid="891327821497462" type="AK">
+                    <param id="0" name="Instance variable">Vida</param>
+                    <param id="1" name="Value">30</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="924819310732123">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="637522542233565" type="System">
+                    <param id="0" name="Interval (seconds)">10</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Spawn another object" sid="577803818880978" type="EnemigoDisparo">
+                    <param id="0" name="Object">BalaEnemigo</param>
+                    <param id="1" name="Layer">1</param>
+                    <param id="2" name="Image point">1</param>
+                </action>
+                <action id="-22" name="Set angle toward position" sid="133729807158061" type="BalaEnemigo">
+                    <param id="0" name="X">AK.X</param>
+                    <param id="1" name="Y">AK.Y</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="405731419089262">
+            <conditions>
+                <condition id="2" name="Key is down" sid="651481384900938" type="Keyboard">
+                    <param id="0" name="Key">87 (W)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-23" name="Move at angle" sid="476159214054895" type="AK">
+                    <param id="0" name="Angle">270</param>
+                    <param id="1" name="Distance">2.5</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="682898308899326">
+            <conditions>
+                <condition id="2" name="Key is down" sid="856465076881069" type="Keyboard">
+                    <param id="0" name="Key">65 (A)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-23" name="Move at angle" sid="294287288455290" type="AK">
+                    <param id="0" name="Angle">180</param>
+                    <param id="1" name="Distance">2.5</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="397563241322738">
+            <conditions>
+                <condition id="2" name="Key is down" sid="621712354197578" type="Keyboard">
+                    <param id="0" name="Key">83 (S)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-23" name="Move at angle" sid="252917592793670" type="AK">
+                    <param id="0" name="Angle">90</param>
+                    <param id="1" name="Distance">2.5</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="769555615913862">
+            <conditions>
+                <condition id="2" name="Key is down" sid="905559786688774" type="Keyboard">
+                    <param id="0" name="Key">68 (D)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-23" name="Move at angle" sid="948165151353530" type="AK">
+                    <param id="0" name="Angle">0</param>
+                    <param id="1" name="Distance">2.5</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="927220833355778">
+            <conditions>
+                <condition id="2" name="Key is down" sid="837712915652299" type="Keyboard">
+                    <param id="0" name="Key">38 (Up arrow)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-23" name="Move at angle" sid="617591666792239" type="AK">
+                    <param id="0" name="Angle">270</param>
+                    <param id="1" name="Distance">2.5</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="328578438263898">
+            <conditions>
+                <condition id="2" name="Key is down" sid="607656815297062" type="Keyboard">
+                    <param id="0" name="Key">37 (Left arrow)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-23" name="Move at angle" sid="406998109770946" type="AK">
+                    <param id="0" name="Angle">180</param>
+                    <param id="1" name="Distance">2.5</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="969144647474383">
+            <conditions>
+                <condition id="2" name="Key is down" sid="570717092345939" type="Keyboard">
+                    <param id="0" name="Key">40 (Down arrow)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-23" name="Move at angle" sid="509683401477333" type="AK">
+                    <param id="0" name="Angle">90</param>
+                    <param id="1" name="Distance">2.5</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="997091081083091">
+            <conditions>
+                <condition id="2" name="Key is down" sid="182034909525863" type="Keyboard">
+                    <param id="0" name="Key">39 (Right arrow)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-23" name="Move at angle" sid="701459560306670" type="AK">
+                    <param id="0" name="Angle">0</param>
+                    <param id="1" name="Distance">2.5</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>
